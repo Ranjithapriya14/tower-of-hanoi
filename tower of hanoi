@@ -1,0 +1,9 @@
+def toh(n,f,t,ax):
+    if n==1:
+       print(f,t)
+       return 
+    toh(n-1,f,ax,t)
+    print(n,f,t)
+    toh(n-1,ax,t,f)
+n=int(input())
+toh(n,'R','P','S')
